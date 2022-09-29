@@ -1,7 +1,5 @@
 const { SlashCommandBuilder, SlashCommandStringOption } = require('discord.js');
-const fs = require('node:fs');
-const path = require('node:path');
-const { scrap_menu } = require("../lib/scrap");
+const { scrap_menu } = require("../helpers/scrap");
 const choices = [
     ["Forum", "https://www.crous-orleans-tours.fr/restaurant/le-forum/"],
     ["Lac", "https://www.crous-orleans-tours.fr/restaurant/le-lac/"],
