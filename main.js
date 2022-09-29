@@ -4,9 +4,7 @@ const path = require('node:path');
 const { token } = require('./config.json');
 const { reloadCommands } = require('./deploy-commands');
 
-const client = new Client({ intents: [
-	GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildPresences, GatewayIntentBits.GuildMembers
-] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.once('ready', async () => {
 	client.user.setPresence({ activities: [{ name: 'Menuman' }], status: 'idle' });
