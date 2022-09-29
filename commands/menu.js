@@ -29,6 +29,7 @@ module.exports = {
         if (!interaction.isChatInputCommand()) return;
 
         if (interaction.commandName === 'menu'){
+            if (interaction.user.username == "PsyKaze#1548") return
             if (interaction.options.getString('nom') === "Bite"){
                 await interaction.reply("le menu du jour a 'la bite' est : \n \n    - queue🍆🍆")
                 return;
